@@ -1,0 +1,205 @@
+/* Aesthetic & Soft Vibes (Dreamy Creators) */
+html {
+    scroll-behavior: smooth;
+    background: #F7F7F7;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Custom hover effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-lightgray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cta-peach);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cta-coral);
+}
+
+:root {
+    --primary-lavender: #C084FC;
+    --primary-babyblue: #89CFF0;
+    --accent-cream: #FDF6EC;
+    --accent-blush: #FFDEE9;
+    --cta-coral: #FF6F61;
+    --cta-peach: #FFABAB;
+    --bg-lightgray: #F7F7F7;
+    --bg-beige: #FAF3E0;
+    /* Neon palette additions */
+    --neon-pink: #FF6EC7;
+    --neon-blue: #3ECFFF;
+    --neon-yellow: #FFF500;
+    --neon-purple: #A259FF;
+    --neon-green: #39FF14;
+}
+
+body {
+    background: var(--bg-lightgray);
+    color: var(--primary-lavender);
+}
+
+.text-primary-lavender {
+    color: var(--primary-lavender) !important;
+}
+.bg-primary-lavender {
+    background-color: var(--primary-lavender) !important;
+}
+.text-primary-babyblue {
+    color: var(--primary-babyblue) !important;
+}
+.bg-primary-babyblue {
+    background-color: var(--primary-babyblue) !important;
+}
+.text-accent-cream {
+    color: var(--accent-cream) !important;
+}
+.bg-accent-cream {
+    background-color: var(--accent-cream) !important;
+}
+.text-accent-blush {
+    color: var(--accent-blush) !important;
+}
+.bg-accent-blush {
+    background-color: var(--accent-blush) !important;
+}
+.text-cta-coral {
+    color: var(--cta-coral) !important;
+}
+.bg-cta-coral {
+    background-color: var(--cta-coral) !important;
+}
+.text-cta-peach {
+    color: var(--cta-peach) !important;
+}
+.bg-cta-peach {
+    background-color: var(--cta-peach) !important;
+}
+.text-bg-lightgray {
+    color: var(--bg-lightgray) !important;
+}
+.bg-bg-lightgray {
+    background-color: var(--bg-lightgray) !important;
+}
+.text-bg-beige {
+    color: var(--bg-beige) !important;
+}
+.bg-bg-beige {
+    background-color: var(--bg-beige) !important;
+}
+
+/* Accent overrides for Tailwind utility classes */
+.text-indigo-600, .text-indigo-700, .text-gray-900, .text-gray-600 {
+    color: var(--primary-lavender) !important;
+}
+.bg-indigo-600, .bg-indigo-700, .bg-gray-50, .bg-gray-900, .bg-white {
+    background-color: var(--accent-cream) !important;
+}
+
+/* Button hover */
+.hover\:bg-evolve-purple:hover {
+    background-color: var(--evolve-purple) !important;
+    color: var(--evolve-white) !important;
+}
+.hover\:bg-evolve-yellow:hover {
+    background-color: var(--evolve-yellow) !important;
+    color: var(--evolve-black) !important;
+}
+
+/* Card and section backgrounds */
+.card-section {
+    background: var(--bg-beige) !important;
+    border: 1px solid var(--primary-babyblue);
+    color: var(--primary-lavender);
+}
+
+/* Yellow for highlights */
+.highlight-yellow {
+    color: var(--evolve-yellow);
+}
+
+/**** CTA Buttons ****/
+.cta-btn {
+    background: linear-gradient(90deg, var(--cta-coral) 0%, var(--cta-peach) 100%);
+    color: var(--accent-cream) !important;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background 0.3s, color 0.3s;
+}
+.cta-btn:hover {
+    background: var(--cta-peach);
+    color: var(--primary-lavender) !important;
+}
+
+/* Neon Glow Effect */
+.glow-neon {
+    box-shadow: 0 0 24px 4px var(--neon-pink),
+                0 0 48px 8px var(--neon-blue),
+                0 0 64px 16px var(--neon-purple);
+    border-radius: 1rem;
+}
+
+/* Neon background for hero/sections */
+.neon-bg {
+    background: radial-gradient(circle at 60% 40%, var(--neon-blue) 0%, var(--neon-purple) 40%, var(--bg-lightgray) 100%);
+}
+
+/* Neon button effect */
+.cta-btn, .bg-cta-peach {
+    box-shadow: 0 0 16px 2px var(--neon-pink), 0 0 32px 4px var(--neon-yellow);
+}
+
+/* Neon card effect */
+.card-section, .bg-gray-50 {
+    box-shadow: 0 0 12px 2px var(--neon-blue), 0 0 24px 4px var(--neon-purple);
+}
+
+.text-navy-blue {
+    color: #14213d !important;
+} 
